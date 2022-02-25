@@ -1,6 +1,10 @@
 # yamldotnet-bug-report
 Minimum reproducible example for YamlDotNet bug report
 
+## Bug report
+
+https://github.com/aaubry/YamlDotNet/issues/681
+
 ## How to run
 
 You need dotnet CLI 6 or higher.
