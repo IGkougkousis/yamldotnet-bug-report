@@ -1,0 +1,16 @@
+﻿.x: &swdev_30yo
+  name: John Doe
+  age: 30
+  title: Software Developer
+
+employees:
+  # this syntax fails when the anchor is defined on a property that is ignored
+  # even though it succeeds in example1, where it is defined on a property that is not ignored
+  - *swdev_30yo
+
+  # this should be OK, based on example2
+  - <<: *swdev_30yo
+    name: Mary Jane
+
+# This fails! But I think it should succeed!
+# Bug?

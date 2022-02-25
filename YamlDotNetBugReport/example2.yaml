@@ -1,0 +1,13 @@
+﻿.x: &swdev_30yo
+  name: John Doe
+  age: 30
+  title: Software Developer
+
+employees:
+  - <<: *swdev_30yo
+    name: John Smith
+  - <<: *swdev_30yo
+    name: Mary Jane
+
+# This works
+# .x is ignored, but the anchor can be used below

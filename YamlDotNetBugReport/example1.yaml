@@ -1,0 +1,13 @@
+﻿employees:
+  - &swdev_30yo
+    name: John Smith
+    title: Software Developer
+    age: 30
+  
+  - *swdev_30yo
+  
+  - <<: *swdev_30yo
+    name: Mary Jane
+
+# This works and creates
+# 2 John Smith's and 1 Mary Jane
